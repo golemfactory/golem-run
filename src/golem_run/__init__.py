@@ -52,6 +52,7 @@ gvmi_list = {
     "node:latest": "1ba672c856aa12d3ee3b7612271eb663f0261352597eee6d4088de39",
 }
 cache_file = Path.home() / ".cache" / "golem_run_qvmi_list.json"
+cache_file.parent.mkdir(exist_ok=True)
 if cache_file.exists():
     with cache_file.open() as f:
         gvmi_list.update(json.load(f))
