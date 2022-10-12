@@ -138,12 +138,12 @@ def __run_cli__():
             if args.executable is None:
                 args.executable = "/usr/local/bin/node"
             if args.image is None:
-                args.image = "node:16-alpine"
+                args.image = "node:16-latest"
         elif args.file.suffix == ".py":
             if args.executable is None:
                 args.executable = "/usr/local/bin/python3"
             if args.image is None:
-                args.image = "python:3-alpine"
+                args.image = "python:3"
         else:
             raise ValueError("Unable to determine default executable and image, please provide -exe / --executable and -img / --image flags")
 
