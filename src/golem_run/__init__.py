@@ -138,7 +138,7 @@ def __run_cli__():
             if args.executable is None:
                 args.executable = "/usr/local/bin/node"
             if args.image is None:
-                args.image = "node:16-latest"
+                args.image = "node:latest"
         elif args.file.suffix == ".py":
             if args.executable is None:
                 args.executable = "/usr/local/bin/python3"
